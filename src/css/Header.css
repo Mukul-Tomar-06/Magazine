@@ -1,0 +1,35 @@
+.header{
+   border: 1px solid black;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #1a1615;
+   height: 100px; 
+   width: 100%;         /* 🔒 Fix the header at top */
+   top: 0;
+   position:fixed;
+   z-index: 1000;
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 15px;
+}
+.nav-bar ul li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-bar ul li:hover{
+    color: violet;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
+
+.header:hover{
+    border-bottom: 2px solid violet;
+}

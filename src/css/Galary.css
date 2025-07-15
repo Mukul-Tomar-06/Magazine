@@ -1,0 +1,33 @@
+.galary {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 200px; /* Adjust as needed */
+}
+
+.galary-yard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 3fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.galary-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Makes it square */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.galary-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galary-img img:hover{
+  transform: translateY(10px);
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;  /* 🔥 This is the real fix */
+  scrollbar-width:thin;
+}
+
+
+.jenner-page{
+  margin-top: 150px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.text p{
+  color: white;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  font-weight: lighter;
+  opacity: 0.2;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.img-page {
+  margin-top: 20px;
+  height: 100vh;         /* full screen height */
+  width: 100vw;          /* full screen width */
+  overflow-x: hidden;
+}
+
+.img-page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* use 'contain' if you don't want cropping */
+  object-position: center;
+  display: block;
+}
+
+
+@media (max-width: 480px) {
+  .img-page img {
+    object-position: top;
+  }
+}
