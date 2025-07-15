@@ -9,6 +9,10 @@ function Contact(){
         e.preventDefault();
         console.log(name,email,address,text);
         alert("Welcome "+name);
+        setName('');
+        setEmail('');
+        setAddress('');
+        setText('');
     }
     return (
         <div>
